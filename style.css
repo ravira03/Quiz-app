@@ -1,0 +1,96 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root{
+  --hue-neutral:200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+body {
+  --hue : var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue),100%,20%);
+}
+
+.grid{
+  position: absolute;
+  text-align: center;
+  width: 800px;
+  max-width: 80%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.grid h1{
+  text-align: center;
+  font-weight: 1000px;
+  font-size: 40px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 15px 80px;
+	color:black;
+	background-color:#ff9800;
+	border:none;
+	font-size: 15px;
+	cursor: pointer;
+  outline: none;
+  border: 1px solid #1d3c6a;
+  border-radius: 30px;
+  margin: 10px 40px 10px 0px;
+}
+
+
+#progress {
+  color: #2b2b2b;
+  font-size: 18px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+  cursor: pointer;
+  background-color: #57636e;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+  outline: 0;
+}
+
+.contain span{
+  text-transform: uppercase;
+  display: block;
+}
+.text{
+  letter-spacing: 8px;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px; 
+  position: relative;
+  animation: text 3s 1;
+  background: #004466;
+}
+#score{
+  font-size: 25px;
+  color:#6ab04c;
+}
+@keyframes text{
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}

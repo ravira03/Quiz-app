@@ -1,0 +1,30 @@
+body{
+    background-image: linear-gradient(to right, rgb(156, 27, 181), rgb(24, 62, 144));
+}
+.heading{
+        text-align: center;
+}
+.intro {
+    color: rgb(224, 224, 224);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+  }
+  
+  .intro h1 {
+    font-size: 50px;
+  }
+.intro #myButton {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    background: rgb(45, 117, 96);
+    border-radius: 3px;
+    cursor: pointer;
+  }
